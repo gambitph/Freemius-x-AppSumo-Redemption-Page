@@ -2,6 +2,8 @@
 
 A complete redemption page for AppSumo Codes for Freemius.
 
+![screenshot](https://github.com/gambitph/Freemius-x-AppSumo-Redemption-Page/blob/master/screenshot.jpg?raw=true)
+
 What this does:
 - People can redeem a Freemius license key
 - Upon successful redemption, the user will be directed to a thank you page
