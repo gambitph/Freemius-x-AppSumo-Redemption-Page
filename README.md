@@ -28,6 +28,8 @@ or for the thank you page:
 npm run start:thanks
 ```
 
+Then visit https://localhost:1234
+
 If you want to test the PHP side of things, build using the instructions below and then place the files in a PHP-enabled web server.
 
 # Customizing
