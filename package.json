@@ -1,0 +1,25 @@
+{
+  "name": "appsumo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "clean": "rimraf ./dist/*",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build:php && parcel serve ./src/index.html",
+    "start:thanks": "parcel serve ./src/thank-you.html",
+    "build:php": "shx cp -r ./lib ./dist && shx cp ./src/*.php ./dist",
+    "build": "npm run clean && parcel build --public-url ./ ./src/index.html ./src/thank-you.html && npm run build:php"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "parcel": "^2.0.0-beta.2",
+    "parcel-bundler": "^1.12.5",
+    "rimraf": "^3.0.2",
+    "sass": "^1.32.8",
+    "shx": "^0.3.3"
+  }
+}
