@@ -1,6 +1,12 @@
 # Freemius x AppSumo Redemption Page
 
-A complete redemption page for AppSumo Codes for Freemius
+A complete redemption page for AppSumo Codes for Freemius.
+
+What this does:
+- People can redeem a Freemius license key
+- Upon successful redemption, the user will be directed to a thank you page
+- The user's email, name and is_marketing_allowed fields are collected
+- When an error occurs (e.g. invalid license key) it will be alerted out for simplicity
 
 # Development
 
