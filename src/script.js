@@ -1,7 +1,9 @@
 document.querySelector( 'form' ).addEventListener("submit", function( e ) {
     // Store reference to form to make later code easier to read
     const form = e.target;
-  
+    const button = e.target.querySelector( 'button[type="submit"]' )
+    button.setAttribute( 'disabled', 'disabled' )
+
     // Prevent the default form submit
     e.preventDefault();
   
@@ -18,5 +20,9 @@ document.querySelector( 'form' ).addEventListener("submit", function( e ) {
         if ( text ) {
             alert( text )
         }
+    } ).catch( function( error ) {
+        alert( 'There was an error redeeming your code: ' + error)
+    } ).finally( function() {
+        button.removeAttribute( 'disabled' )
     } )
 } )
